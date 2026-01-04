@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-royal-blue: #002366;
+  --color-rich-gold: #D4AF37;
+  --color-warm-sand: #F5F5DC;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --background-image-hero-pattern: url('https://images.unsplash.com/photo-1539650116455-29fb5d1d6032?q=80&w=3200&auto=format&fit=crop');
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-warm-sand/10;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
